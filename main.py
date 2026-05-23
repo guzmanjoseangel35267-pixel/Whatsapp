@@ -65,7 +65,7 @@ def guardar_ubicacion():
 
 @app.route('/api/historial')
 def api_historial():
-    # Nota: Podrías anadir la misma seguridad aqui si no quieres que sea publico
+    # Nota: Podrias anadir la misma seguridad aqui si no quieres que sea publico
     return jsonify(cargar_datos())
 
 if __name__ == '__main__':
