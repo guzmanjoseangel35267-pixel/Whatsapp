@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__, static_folder='static')
 
-# Archivo donde se almacenarán las coordenadas
+# Archivo donde se almacenaran las coordenadas
 DATA_FILE = 'ubicaciones.json'
 # Usamos una variable de entorno para la contraseña (Seguridad)
 ADMIN_PASSWORD = os.environ.get('APP_PASSWORD', 'MiClaveSegura123')
